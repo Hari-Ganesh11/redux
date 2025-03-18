@@ -1,0 +1,63 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Navbar Logo */
+nav h1 {
+    color: white;
+    font-size: 24px;
+}
+
+/* Navbar Links */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Individual Links */
+ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+/* Hover & Active Styles */
+ul a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Responsive Menu for Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
